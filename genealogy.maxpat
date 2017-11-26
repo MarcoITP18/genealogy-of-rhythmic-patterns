@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 233.0, 79.0, 1173.0, 691.0 ],
+		"rect" : [ 196.0, 115.0, 709.0, 691.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1688,7 +1688,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 66.0, 163.0, 887.0, 626.0 ],
+						"rect" : [ 62.0, 186.0, 887.0, 626.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1717,14 +1717,66 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 569.0, 414.0, 106.0, 22.0 ],
+									"style" : "",
+									"text" : "replace clave.wav"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "float", "bang" ],
+									"patching_rect" : [ 569.0, 445.0, 101.0, 22.0 ],
+									"style" : "",
+									"text" : "buffer~ uruguay4"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 678.0, 88.0, 111.0, 22.0 ],
+									"style" : "",
+									"text" : "replace caixa.wav"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "float", "bang" ],
+									"patching_rect" : [ 678.0, 120.0, 87.0, 22.0 ],
+									"style" : "",
+									"text" : "buffer~ brazil5"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-1",
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 661.0, 278.0, 133.0, 22.0 ],
+									"patching_rect" : [ 582.0, 278.0, 138.0, 22.0 ],
 									"style" : "",
-									"text" : "replace colombia4.wav"
+									"text" : "replace llamador.wav"
 								}
 
 							}
@@ -1747,7 +1799,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 18.0, 399.0, 70.0, 22.0 ],
+									"patching_rect" : [ 20.0, 346.0, 70.0, 22.0 ],
 									"style" : "",
 									"text" : "r initMaster"
 								}
@@ -1785,7 +1837,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 53.0, 448.0, 128.0, 20.0 ],
+									"patching_rect" : [ 55.0, 378.0, 128.0, 20.0 ],
 									"style" : "",
 									"text" : "load uruguay samples"
 								}
@@ -1798,7 +1850,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 18.0, 448.0, 24.0, 24.0 ],
+									"patching_rect" : [ 20.0, 378.0, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -1810,9 +1862,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 438.0, 484.0, 129.0, 22.0 ],
+									"patching_rect" : [ 440.0, 414.0, 113.0, 22.0 ],
 									"style" : "",
-									"text" : "replace uruguay3.wav"
+									"text" : "replace chico2.wav"
 								}
 
 							}
@@ -1823,7 +1875,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
-									"patching_rect" : [ 438.0, 515.0, 101.0, 22.0 ],
+									"patching_rect" : [ 440.0, 445.0, 101.0, 22.0 ],
 									"style" : "",
 									"text" : "buffer~ uruguay3"
 								}
@@ -1836,9 +1888,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 300.0, 484.0, 128.0, 22.0 ],
+									"patching_rect" : [ 302.0, 414.0, 113.0, 22.0 ],
 									"style" : "",
-									"text" : "replace uruguay2.wav"
+									"text" : "replace chico1.wav"
 								}
 
 							}
@@ -1849,7 +1901,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
-									"patching_rect" : [ 300.0, 515.0, 101.0, 22.0 ],
+									"patching_rect" : [ 302.0, 445.0, 101.0, 22.0 ],
 									"style" : "",
 									"text" : "buffer~ uruguay2"
 								}
@@ -1862,9 +1914,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 166.0, 484.0, 128.0, 22.0 ],
+									"patching_rect" : [ 168.0, 414.0, 118.0, 22.0 ],
 									"style" : "",
-									"text" : "replace uruguay1.wav"
+									"text" : "replace repique.wav"
 								}
 
 							}
@@ -1875,7 +1927,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
-									"patching_rect" : [ 166.0, 515.0, 101.0, 22.0 ],
+									"patching_rect" : [ 168.0, 445.0, 101.0, 22.0 ],
 									"style" : "",
 									"text" : "buffer~ uruguay1"
 								}
@@ -1888,9 +1940,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 18.0, 484.0, 128.0, 22.0 ],
+									"patching_rect" : [ 20.0, 414.0, 107.0, 22.0 ],
 									"style" : "",
-									"text" : "replace uruguay0.wav"
+									"text" : "replace piano.wav"
 								}
 
 							}
@@ -1901,7 +1953,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
-									"patching_rect" : [ 18.0, 515.0, 101.0, 22.0 ],
+									"patching_rect" : [ 20.0, 445.0, 101.0, 22.0 ],
 									"style" : "",
 									"text" : "buffer~ uruguay0"
 								}
@@ -1915,7 +1967,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 53.0, 52.0, 113.0, 20.0 ],
 									"style" : "",
-									"text" : "load brazil samples"
+									"text" : "load samples"
 								}
 
 							}
@@ -1950,9 +2002,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 555.0, 89.0, 113.0, 22.0 ],
+									"patching_rect" : [ 555.0, 88.0, 111.0, 22.0 ],
 									"style" : "",
-									"text" : "replace brazil4.wav"
+									"text" : "replace agogo.wav"
 								}
 
 							}
@@ -1976,9 +2028,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 426.0, 88.0, 113.0, 22.0 ],
+									"patching_rect" : [ 426.0, 88.0, 122.0, 22.0 ],
 									"style" : "",
-									"text" : "replace brazil3.wav"
+									"text" : "replace chocallo.wav"
 								}
 
 							}
@@ -2002,9 +2054,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 288.0, 88.0, 113.0, 22.0 ],
+									"patching_rect" : [ 288.0, 88.0, 128.0, 22.0 ],
 									"style" : "",
-									"text" : "replace brazil2.wav"
+									"text" : "replace tamborim.wav"
 								}
 
 							}
@@ -2028,9 +2080,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 154.0, 88.0, 113.0, 22.0 ],
+									"patching_rect" : [ 154.0, 88.0, 115.0, 22.0 ],
 									"style" : "",
-									"text" : "replace brazil1.wav"
+									"text" : "replace surdo2.wav"
 								}
 
 							}
@@ -2054,7 +2106,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
-									"patching_rect" : [ 661.0, 309.0, 106.0, 22.0 ],
+									"patching_rect" : [ 582.0, 309.0, 106.0, 22.0 ],
 									"style" : "",
 									"text" : "buffer~ colombia4"
 								}
@@ -2067,9 +2119,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 18.0, 88.0, 113.0, 22.0 ],
+									"patching_rect" : [ 18.0, 88.0, 115.0, 22.0 ],
 									"style" : "",
-									"text" : "replace brazil0.wav"
+									"text" : "replace surdo1.wav"
 								}
 
 							}
@@ -2092,9 +2144,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 499.0, 278.0, 133.0, 22.0 ],
+									"patching_rect" : [ 460.0, 278.0, 111.0, 22.0 ],
 									"style" : "",
-									"text" : "replace colombia3.wav"
+									"text" : "replace alegre.wav"
 								}
 
 							}
@@ -2105,7 +2157,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
-									"patching_rect" : [ 499.0, 309.0, 106.0, 22.0 ],
+									"patching_rect" : [ 460.0, 309.0, 106.0, 22.0 ],
 									"style" : "",
 									"text" : "buffer~ colombia3"
 								}
@@ -2118,9 +2170,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 325.0, 278.0, 133.0, 22.0 ],
+									"patching_rect" : [ 325.0, 278.0, 122.0, 22.0 ],
 									"style" : "",
-									"text" : "replace colombia2.wav"
+									"text" : "replace tambora.wav"
 								}
 
 							}
@@ -2144,9 +2196,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 174.0, 278.0, 133.0, 22.0 ],
+									"patching_rect" : [ 174.0, 278.0, 125.0, 22.0 ],
 									"style" : "",
-									"text" : "replace colombia1.wav"
+									"text" : "replace maraca2.wav"
 								}
 
 							}
@@ -2170,9 +2222,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 18.0, 278.0, 134.0, 22.0 ],
+									"patching_rect" : [ 18.0, 278.0, 125.0, 22.0 ],
 									"style" : "",
-									"text" : "replace colombia0.wav"
+									"text" : "replace maraca1.wav"
 								}
 
 							}
@@ -2316,7 +2368,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-31", 0 ],
-									"order" : 4,
+									"order" : 5,
 									"source" : [ "obj-43", 0 ]
 								}
 
@@ -2324,7 +2376,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
-									"order" : 3,
+									"order" : 4,
 									"source" : [ "obj-43", 0 ]
 								}
 
@@ -2332,14 +2384,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-36", 0 ],
-									"order" : 1,
-									"source" : [ "obj-43", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-38", 0 ],
 									"order" : 2,
 									"source" : [ "obj-43", 0 ]
 								}
@@ -2347,7 +2391,23 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-38", 0 ],
+									"order" : 3,
+									"source" : [ "obj-43", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-40", 0 ],
+									"order" : 1,
+									"source" : [ "obj-43", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
 									"order" : 0,
 									"source" : [ "obj-43", 0 ]
 								}
@@ -2356,14 +2416,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-50", 0 ],
-									"order" : 0,
-									"source" : [ "obj-49", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-52", 0 ],
 									"order" : 1,
 									"source" : [ "obj-49", 0 ]
 								}
@@ -2371,7 +2423,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-54", 0 ],
+									"destination" : [ "obj-52", 0 ],
 									"order" : 2,
 									"source" : [ "obj-49", 0 ]
 								}
@@ -2379,8 +2431,24 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-56", 0 ],
+									"destination" : [ "obj-54", 0 ],
 									"order" : 3,
+									"source" : [ "obj-49", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-56", 0 ],
+									"order" : 4,
+									"source" : [ "obj-49", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"order" : 0,
 									"source" : [ "obj-49", 0 ]
 								}
 
@@ -2429,8 +2497,22 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-49", 0 ],
 									"source" : [ "obj-60", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-8", 0 ]
 								}
 
 							}
