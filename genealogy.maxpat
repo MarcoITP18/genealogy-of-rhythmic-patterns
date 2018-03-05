@@ -38,12 +38,64 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-84",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 305.0, 507.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-82",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 273.0, 452.0, 69.0, 22.0 ],
+					"style" : "",
+					"text" : "open wave"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-78",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 356.0, 532.0, 85.0, 60.0 ],
+					"style" : "",
+					"text" : "to record:\n1: open wave\n2: toggle on\n3: toggle off "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 273.0, 570.0, 71.0, 22.0 ],
+					"style" : "",
+					"text" : "sfrecord~ 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-110",
 					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 623.0, 27.0, 335.0, 100.0 ],
+					"patching_rect" : [ 643.0, 6.0, 335.0, 100.0 ],
 					"style" : "",
 					"text" : "INSTRUCTIONS:\n1. hit print and check where is the arduino connected\n2. replace the letter in the serial object, right now is d\n3. open the metronome with the toggle onn the top\nTO DO:\ncheck connectionns for u2 and u3, chico and chico repicado,\nwhenever any of those buttons is pressed, both are pressed."
 				}
@@ -255,7 +307,6 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 553.999939, 463.0, 24.0, 24.0 ],
-					"presentation_rect" : [ 685.0, 682.5, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -2927,7 +2978,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 180.5, 541.0, 37.0, 22.0 ],
+					"patching_rect" : [ 180.5, 570.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "dac~"
 				}
@@ -6447,7 +6498,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-67", 1 ],
+					"destination" : [ "obj-6", 1 ],
 					"order" : 0,
 					"source" : [ "obj-65", 0 ]
 				}
@@ -6455,8 +6506,24 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-67", 0 ],
+					"destination" : [ "obj-6", 0 ],
 					"order" : 1,
+					"source" : [ "obj-65", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 1 ],
+					"order" : 2,
+					"source" : [ "obj-65", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 0 ],
+					"order" : 3,
 					"source" : [ "obj-65", 0 ]
 				}
 
@@ -6563,6 +6630,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-65", 0 ],
 					"source" : [ "obj-81", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-82", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-84", 0 ]
 				}
 
 			}
